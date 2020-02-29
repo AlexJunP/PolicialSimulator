@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Simulator Pow Pow</title>
+    <style>
+        body {
+            background-color: rgb(110, 81, 74);
+            color: rgb(234, 235, 227);
+            font: normal 16pt Arial;
+        }
+        h1{
+            color:wheat;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>A História chega ao fim...</h1>
+    <script>
+        var Contador;
+        var Resultado;
+        var EscolhaB,EscolhaC,EscolhaD,EscolhaE,EscolhaF;
+        Resultado = 'vazio';
+        
+
+        window.alert("Bem Vindo ao Polícia Simulator um jogo onde a história muda conforme suas decisões, escolha com cuidado! Dica : Use números para escolher as decisões.)");
+        window.alert("É um gato ! Não, não é um gato é um ladrão que roubou um gato!");
+        var EscolhaA = window.prompt("Ele se assusta com sua chegada e corre. O gato vai para a direita o ladrão vai para a esquerda. | 1  Seguir o gato | 2  Seguir o ladrão |");
+        Contador = 1;
+        if(EscolhaA == '1')
+        {
+            document.write("Você corre atrás do gato e salva a vida do bichano, levando-o devolta feliz a sua dona.")
+            document.write("<br> Apesar de sua dona ficar feliz todos acham que você é um covarde, você perde o emprego e vai morar debaixo de uma ponte.");
+            document.write("<br> O gato que você ajudou passa em sua frente com um pedaço de peixe na boca, ele não te dá e você morre de fome.");
+            Resultado = 'fome';
+        }
+        if(EscolhaA == '2')
+        {
+            window.alert("Você corre atrás do ladrão de gatos, até que se aproxima de um carro. RUUUM !! O carro sai a toda velocidade, mas como ele pode ser tão rápido?");
+            EscolhaB = window.prompt("E agora? me parece que ele vai fugir! |1  Atirar no Pneu | 2  Ir atrás do carro correndo");
+            if(EscolhaB == '1')
+            {
+                document.write("<br>Perfeito! O tiro acerta o pneu e o carro começa a derrapar até bater em outro veículo em sua frente.");
+                document.write("<br>POOL! Acho que ele não estava usando cintos! Um corpo voa a todo vapor pelo vidro, mas espera ... Não é o ladrão. É UM GATO!");
+                document.write("<br>Não, não é um gato, é uma rica senhora com um casaco cor pele de gato... Era, na verdade.");
+                document.write("<br>Sorte na mira, azar na vida. O caso do policial que matou a fundadora da cidade se espalha e você perde o emprego. ");
+                document.write("<br>Você passa a morar na ponte e vê... Sim, o gato que você não ajudou com um peixe saboroso na boca... aquilo poderia matar a sua fome.")
+                document.write("<br>Porém, ele nega. <br>Sua fome morre mas você morre também, talvez deveria ter ajudado o pobre bichano.");
+                Resultado = 'fome';
+            }
+            if(EscolhaB == '2')
+            {
+                window.alert("O Espírito da burrice lhe invade e você decide ir atrás dele correndo.");
+                window.alert("Não tem como competir, o carro é mais rápido que você.");
+                window.alert("Mas espere... É o ladrão !");
+                window.alert("Não, não é o ladrão é o gato. Ele corre furioso e vingativo para cima do ladrão e você ...");
+                var EscolhaC = window.prompt("|1  Corre junto |2  Atira! ");
+                if(EscolhaC == '2')
+                {
+                    document.write("<br>Direto na perna do ... DOS DOIS!");
+                    document.write("<br>O ladrão não consegue mais correr e decide se entregar.")
+                    document.write("<br> O gato também entrega... a sua vida para Deus.");
+                    document.write("<br>O caso se espalha e você se torna muito conhecido e ganha uma promoção pela prisão do popular e perigoso bandido.");
+                    document.write("<br>Mas a velha senhora dona do gato perdeu seu único amigo.");
+                    document.write("<br>Agora ela vive triste e sozinha em sua pequena casa, em seu pequeno bairro, com sua pequena vida.<br> Por quanto tempo? Sem seu MELHOR amigo, ninguém mais sabe.");
+                    Resultado = 'velha solitaria';
+                }
+                if(EscolhaC == '1')
+                {
+                    window.alert('Você deveria ser atleta e não policial. Novamente dispara em uma nova perseguição.')
+                    window.alert("A pressão sobre o ladrão é grande, seu ato de heroismo invade as pessoas próximas e todas disparam atrás do ladrão.");
+                    window.alert("Mas agora.. Você o perdeu de vista !!")
+                    var EscolhaD = window.prompt('|1  Atirar para cima |2 Seguir o gato');
+                    if(EscolhaD == '1')
+                    {
+                        window.alert("POOL! Silêncio absoluto, exceto por uma porta que acaba de se abrir.");
+                        window.alert("Os jogos olímpicos retornam a suas veias e você dispara em direção a porta.")
+                        window.alert("Bah, está trancada. Você pode atirar e entrar.");
+                        EscolhaF= window.prompt("|1  Atirar |2 Procurar outra entrada");
+                        if(EscolhaF == '1')
+                        {
+                            window.alert("E novamente POOOW! A porta se abre e você entra, é uma longa escadaria que te leva para cima.");
+                            window.alert("Você vai parar no topo do prédio, sim, era um prédio.")
+                            window.alert("O ladrão esta de costas, distraído, pensa que se safou.");
+                            window.alert("Hora de acabar com isso!");
+                            EscolhaG = window.prompt("|1  Atirar |2  Pular nele.");
+                            if(EscolhaG == '1')
+                            {
+                                
+                                    window.alert('TIC. TIC. TIC. Você não tem balas!');
+                                    window.alert("Gastou sua última para entrar no prédio. Está tudo acabado ... Mas espere");
+                                    window.alert("É UM GATO!");
+                                    document.write("É realmente um gato ! E... está voando! <br> Voando em direção ao ladrão, é um belo salto.")
+                                    document.write("<br> O ladrão não esperava por essa! Ele cai sem equilibrio, mas não do prédio.")
+                                    document.write("<br>A notícia se espalha, você prendeu o ladrão e levou o gato para a velha senhora.")
+                                    document.write("<br>O caso do gato que deteve um ladrão. Essa é a notícia e ela não envolve você. <br> Você continua com seu trabalho em seu mesmo cargo, sem reconhecimento nenhum exceto o da grata velha senhora.")
+                                    document.write("<br> Porém você sabe, que em uma pequena casa dentro de um pequeno bairro, há uma pequena vida, que está feliz com seu GRANDE amigo.")
+                                    document.write("<br> De qualquer forma como você prefere ser um corredor, não se importa com a falta de reconhecimento.")
+                                    Resultado = 'felicidade';
+                                
+                                
+                            }
+                            if(EscolhaG == '2')
+                            {
+                                document.write("<br> Você faz algo que ninguém esperava... Corre denovo.");
+                                document.write("<br> Esta no ar... Chegando perto ... PAF.");
+                                document.write("<br> O gato pensou o mesmo que você! Os 3 caem do prédio.")
+                                Resultado = 'todos morrem';
+                            }
+                        }
+                        if(EscolhaF == '2')
+                                {
+                                    window.alert("Você olha em volta e encontra uma porta semi aberta. Balas não caem do céu e você resolve economizar.");
+                                    window.alert("Você entra, é uma longa escadaria que te leva para cima.");
+                                    window.alert("Você vai parar no topo do prédio, sim, era um prédio.")
+                                    window.alert("O ladrão esta de costas, distraído, pensa que se safou.");
+                                    window.alert("Hora de acabar com isso! E lhe resta apenas... Uma bala! Que Sorte! Ainda bem que você não a gastou.");
+                                    EscolhaG = window.prompt("|1  Atirar |2  Pular nele.");
+                            if(EscolhaG == '1')
+                            {
+                                
+                                    window.alert("POW! A bala parece se mover em camera lenta, mas não só ela.");
+                                    window.alert("Um gato surge lentamente... MIIAAAAU.")
+                                    document.write("<br>O Tiro acerta os dois, e juntos eles voam... Para baixo. PAF!");
+                                    document.write("<br>Você desce rápido as escadas e a cena esta feita, juntamente com a notícia :");
+                                    document.write("<br>Policial detém ladrão e vira heroi da cidade. Gato morre acidentalmente.")
+                                    document.write("<br>Para a cidade : Um grande heroi.<br> Para a velha senhora : Nada, pois a dor da perda e o choque ... Aquela cena foi tão triste... Ela não resistiu.");
+                                    Resultado = 'velha solitaria'
+                                
+                            }
+                            if(EscolhaG == '2')
+                            {
+                                document.write("<br> Você faz algo que ninguém esperava... Corre denovo.");
+                                document.write("<br> Esta no ar... Chegando perto ... PAF.");
+                                document.write("<br> O gato pensou o mesmo que você! Os 3 caem do prédio.")
+                                Resultado = 'todos morrem';
+                            }
+                                    
+                                }
+                        
+                    }
+                    if(EscolhaD == '2')
+                    {
+                        window.alert("Você segue o bichano até uma porta, ele entra primeiro e você logo atrás.");
+                        window.alert("A escadarias te levam para o topo do prédio em que entrou. Você segue devagar, e ve o ladrão distraido, acha que se safou.");
+                        window.alert("O gato não tem piedade, corre em direção do ladrão. Você precisa fazer alguma coisa!");
+                        var EscolhaH = window.prompt("|1  Atirar |2  Correr também");
+                        if(EscolhaH == '1')
+                        {
+                            window.alert("POW! A bala parece se mover em camera lenta. E então...");
+                                window.alert("MIIAAAAU.")
+                                document.write("<br>O Tiro acerta os dois, e juntos eles voam... Para baixo. PAF!");
+                                document.write("<br>Você desce rápido as escadas e a cena esta feita, juntamente com a notícia :");
+                                document.write("<br>Policial detém ladrão e vira heroi da cidade. Gato morre acidentalmente.")
+                                document.write("<br>Para a cidade : Um grande heroi.<br> Para a velha senhora : Nada, pois a dor da perda e o choque ... Aquela cena foi tão triste... Ela não resistiu.");
+                                Resultado = 'velha solitaria'
+                        }
+                        if(EscolhaH == '2')
+                        {
+                            document.write("<br> Você faz algo que ninguém esperava... Corre denovo.");
+                                document.write("<br> Esta no ar... Chegando perto ... PAF.");
+                                document.write("<br> O gato pensou o mesmo que você! Os 3 caem do prédio.")
+                                Resultado = 'todos morrem';
+                        }
+                    }
+                }
+            }
+        }
+
+    
+    </script>
+    <br><br><br><br>
+    <br> Fim do Jogo <br>
+    <br> Resultados :
+    <br>
+    <script>
+        if(Resultado == 'fome')
+        {
+            document.write("<br> Morreu de fome perante egoismo de um gato.");
+        }
+        if(Resultado == 'velha solitaria')
+        {
+            document.write("<br> Se tornou famoso e rico as custas do fim de uma linda amizade.");
+        }
+        if(Resultado == 'todos morrem')
+        {
+            document.write("<br>Não se sabe ao certo o final, pois você morreu.<br> A única certeza que temos é que a velha senhora sentirá muita falta de seu pequeno bichano.");
+        }
+        if(Resultado == 'felicidade')
+        {
+            document.write("<br>Apesar de não receber fama, hoje uma senhora vive feliz com seu gato em uma cidade mais segura, e este, foi o seu maior salário.");
+        }
+        if(Resultado == 'vazio')
+        {
+            document.write("<br> Você não obteve um final! Lembre-se : <br> - Não digite letras nas escolhas, apenas os números 1 ou 2 <br> - Não pule as escolhas sem digitar nada!")
+        }
+    </script>
+    <br><br><br><br>
+    Meu Twitter : https://twitter.com/AlexJunP
+    <br>Obrigado por Jogar :D
+    <br><br>Por : Alex Jun.
+</body>
+</html>
